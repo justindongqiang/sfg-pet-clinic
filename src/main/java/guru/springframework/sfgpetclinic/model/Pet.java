@@ -8,21 +8,25 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Pet {
 
-    @Column(name = "name")
+    //@Column(name = "name")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "type_id")
+   // @ManyToOne
+    //@JoinColumn(name = "type_id")
     private PetType petType;
 
-    @ManyToOne
-    @JoinColumn(name = "owner_id")
+   // @ManyToOne
+    //@JoinColumn(name = "owner_id")
     private Owner owner;
 
-    @Column(name = "birth_date")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    //@Column(name = "birth_date")
+   // @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthDate;
 
 //    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
