@@ -5,14 +5,12 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.Set;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Pet {
+public class Pet extends BaseEntity{
 
     //@Column(name = "name")
     private String name;

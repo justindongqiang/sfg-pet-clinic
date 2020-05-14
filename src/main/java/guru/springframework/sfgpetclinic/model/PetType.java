@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 //@Entity
 //@Table(name = "types")
-public class PetType {
+public class PetType extends BaseEntity{
 
     //@Column(name = "name")
     private String name;
