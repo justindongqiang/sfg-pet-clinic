@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -25,5 +26,7 @@ public class Person extends BaseEntity{
 
     //@Column(name = "last_name")
     private String lastName;
+
+    private Set<Pet> pets;
 
 }
