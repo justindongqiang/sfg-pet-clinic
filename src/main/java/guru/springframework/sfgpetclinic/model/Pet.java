@@ -10,21 +10,25 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+
+@Entity
+@Table(name = "pets")
 public class Pet extends BaseEntity{
 
-    //@Column(name = "name")
+    @Column(name = "name")
     private String name;
 
-   // @ManyToOne
-    //@JoinColumn(name = "type_id")
+    @ManyToOne
+    @JoinColumn(name = "type_id")
     private PetType petType;
 
-   // @ManyToOne
-    //@JoinColumn(name = "owner_id")
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
     private Owner owner;
 
-    //@Column(name = "birth_date")
-   // @DateTimeFormat(pattern = "yyyy-MM-dd")
+
+    // @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @Column(name = "birth_date")
     private LocalDate birthDate;
 
 //    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")

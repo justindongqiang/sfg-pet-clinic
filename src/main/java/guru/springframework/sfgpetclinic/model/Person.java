@@ -13,18 +13,13 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-//@MappedSuperclass
+@MappedSuperclass
 public class Person extends BaseEntity{
 
-    public Person(Long id, String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    //@Column(name = "first_name")
+    @Column(name = "first_name")
     private String firstName;
 
-    //@Column(name = "last_name")
+    @Column(name = "last_name")
     private String lastName;
 
     private Set<Pet> pets;

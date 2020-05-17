@@ -11,11 +11,11 @@ import javax.persistence.Table;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-//@Entity
-//@Table(name = "types")
+@Entity
+@Table(name = "types")
 public class PetType extends BaseEntity{
 
-    //@Column(name = "name")
+    @Column(name = "name")
     private String name;
 
     @Override
