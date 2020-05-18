@@ -10,8 +10,8 @@ import java.util.Set;
 /**
  * Created by jt on 8/7/18.
  */
-//@Service
-//@Profile({"default", "map"})
+
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override
