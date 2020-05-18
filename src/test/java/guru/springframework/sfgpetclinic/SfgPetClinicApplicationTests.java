@@ -12,9 +12,4 @@ class SfgPetClinicApplicationTests {
     void contextLoads() {
 
     }
-
-    @Test
-    public void main() {
-        SfgPetClinicApplication.main(new String[] {});
-    }
 }
