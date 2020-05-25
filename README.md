@@ -1,2 +1,2 @@
 # sfg-pet-clinic
-Spring Framework 5 Pet Clinic Applicaion v1.0
+Spring5 Pet Clinic Application v1.0
